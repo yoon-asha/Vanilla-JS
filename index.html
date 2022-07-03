@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="styleSheet" href="./style.css" />
+  <link rel="styleSheet" href="./css/style.css" />
   <title>Momentum App</title>
 </head>
+
 <body>
-  <form id="login-form" class="hidden" >
+  <form id="login-form" class="hidden">
     <input required maxlength='15' minlength="3" type="text" placeholder="이름을 입력해주세요">
     <input type="submit" value="LogIn" />
   </form>
+  <h2 id="clock"></h2>
   <h1 id="greeting" class="hidden"></h1>
-  <script src="app.js"></script>
+  <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src="./js/greetings.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
 </body>
+
 </html>
